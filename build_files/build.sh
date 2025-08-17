@@ -12,7 +12,6 @@ set -ouex pipefail
 # this installs a package from fedora repos
 
 dnf -y install python3-setuptools python3-wheel
-usermod -a -G render,video bazzite # Add the current user to the render and video groups
 dnf -y install rocm
 
 # Use a COPR Example:
