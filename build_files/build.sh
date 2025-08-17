@@ -11,7 +11,7 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 
-dnf --enablerepo=updates-testing install rocal
+dnf -y --enablerepo=updates-testing install rocal
 dnf -y install python3-setuptools python3-wheel
 dnf -y install rocm
 
