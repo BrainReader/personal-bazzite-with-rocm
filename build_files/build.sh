@@ -11,7 +11,9 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 
-dnf -y install python3-setuptools python3-wheel rocal rocal-devel
+wget -P /tmp https://kojipkgs.fedoraproject.org//packages/rocal/6.3.1/1.fc42/src/rocal-6.3.1-1.fc42.src.rpm
+dnf -y install /tmp/rocal-6.3.1-1.fc42.src.rpm
+dnf -y install python3-setuptools python3-wheel
 dnf -y install rocm
 
 # Use a COPR Example:
